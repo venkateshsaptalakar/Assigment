@@ -1,0 +1,23 @@
+<header>
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+<ul class="navbar-nav">
+
+    <li><a *ngIf="isUserLoggedIn" routerLink="/welcome/venkatesh" class="nav-link">Home</a></li>
+       <li> <a *ngIf="isUserLoggedIn" routerLink="/todos" class="nav-link">About Event</a></li>
+</ul>
+<ul class="navbar-nav">
+
+    <li><a *ngIf="isUserLoggedIn" routerLink="/admin" class="nav-link">Admin</a></li>
+       
+</ul>
+<ul class="navbar-nav navbar-collapse justify-content-end" >
+    <li> <a *ngIf="!isUserLoggedIn" routerLink="/login" class="nav-link">Event Manager Login</a></li>
+           <li><a *ngIf="isUserLoggedIn" routerLink="/logout" class="nav-link">LogOut</a> </li>
+    
+</ul>
+
+</nav>
+
+
+</header>
